@@ -1,0 +1,20 @@
+getSelectionBounds(x, y, width, height); 
+print("selection width", width);
+print("selection height", height);
+print("selection x", x);
+print("selection y", y);
+
+Dialog.create("Box Details"); 
+Dialog.addNumber("Width in pixels",width);
+Dialog.addNumber("Height in pixels",height);
+Dialog.addNumber("X location in pixels", x)
+Dialog.addNumber("Y Location in pixels", y)
+
+Dialog.show(); 
+width = Dialog.getNumber();
+height = Dialog.getNumber();
+x = Dialog.getNumber();
+y = Dialog.getNumber();
+
+makeRectangle(x,y,width,height);
+
